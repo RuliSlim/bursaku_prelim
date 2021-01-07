@@ -12,7 +12,7 @@ export default function ContainerChart() {
 						<p className="text-3xl md:text-4xl">20</p>
 					</div>
 					<div className="flex flex-col md:flex-row justify-between w-full">
-						<div className="flex flex-row w-60 md:justify-around">
+						<div className="flex flex-col lg:flex-row w-60 lg:justify-around">
 							<p>Periode</p>
 							<select id="cars" name="cars" className="border-2 border-blue-500 border-opacity-100 mx-2">
 								<option value="volvo">Hari ini</option>
