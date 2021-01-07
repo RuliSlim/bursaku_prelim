@@ -1,7 +1,6 @@
 import React from "react";
-import Cards from "./components/cards";
-import ContainerChart from "./components/chartContainer";
 import SideBar from "./components/sidebar";
+import Dashboard from "./pages/dashboard";
 
 function App() {
   return (
@@ -12,18 +11,7 @@ function App() {
           <SideBar />
         </div>
         <div className="md:w-10/12 p-5 w-screen h-full border-l-2 border-light-blue-500 border-opacity-50">
-          <div className="flex flex-col h-full">
-            <p className="text-3xl p-5">Dashboard</p>
-            <div className="h-1/5 grid grid-cols-1 md:grid-cols-4 grid-flow-row gap-5">
-              <Cards />
-              <Cards />
-              <Cards />
-              <Cards />
-            </div>
-            <div className="h-4/5 pt-10">
-              <ContainerChart />
-            </div>
-          </div>
+          <Dashboard />
         </div>
       </div>
     </div>

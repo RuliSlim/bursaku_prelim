@@ -1,5 +1,6 @@
 import React from "react";
 import MyBarChart from "../component/barChart";
+import PieChart from "./pieChart";
 
 export default function ContainerChart() {
 	return (
@@ -30,10 +31,32 @@ export default function ContainerChart() {
 					</div>
 				</div>
 				<MyBarChart />
-				<p className="pl-10 pb-5 mt-2">Lihat lebih lengkap </p>
+				<button>
+					<p className="pl-10 pb-5 mt-2 text-blue-300">Lihat lebih lengkap &#62; </p>
+				</button>
 			</div>
-			<div className="border-1 shadow-md rounded-xl border-light-blue-500 border-opacity-50">
-				Pie Cart
+			<div className="flex flex-col border-1 shadow-md rounded-xl border-light-blue-500 border-opacity-50">
+				<div className="p-10 flex flex-col w-full">
+					<div className="flex flex-row justify-between w-full">
+						<p className="text-3xl">Data task</p>
+					</div>
+					<div className="flex flex-col md:flex-row justify-between w-full">
+						<div className="flex flex-row ">
+							<p>Periode</p>
+							<select id="cars" name="cars" className="border-2 border-blue-500 border-opacity-100 mx-2">
+								<option value="volvo">Bulan ini</option>
+								<option value="saab">Saab</option>
+								<option value="fiat">Fiat</option>
+								<option value="audi">Audi</option>
+							</select>
+						</div>
+						<p>Tulisan gatau apaan ga kebaca</p>
+					</div>
+				</div>
+				<PieChart />
+				<button>
+					<p className="pl-10 pb-5 mt-2 text-blue-300">Lihat lebih lengkap &#62; </p>
+				</button>
 			</div>
 		</div>
 	);

@@ -47,7 +47,7 @@ export default function MyBarChart() {
 			<VictoryBar
 				barWidth={50}
 				padding={{ left: 20, right: 60 }}
-				style={{ data: { fill: "red" } }}
+				style={{ data: { fill: "#47c771" } }}
 				data={[
 					{ x: "Senin", y: 0, },
 					{ x: "Selasa", y: 0, },
