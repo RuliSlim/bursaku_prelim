@@ -14,20 +14,20 @@ export default function ContainerChart() {
 					<div className="flex flex-col md:flex-row justify-between w-full">
 						<div className="flex flex-col lg:flex-row w-60 lg:justify-around">
 							<p>Periode</p>
-							<select id="cars" name="cars" className="border-2 border-blue-500 border-opacity-100 mx-2">
+							<select id="cars" name="cars" className="border-2 border-blue-500 border-opacity-100 mx-2 h-8">
 								<option value="volvo">Hari ini</option>
 								<option value="saab">Saab</option>
 								<option value="fiat">Fiat</option>
 								<option value="audi">Audi</option>
 							</select>
-							<select id="cars" name="cars" className="border-2 border-blue-500 border-opacity-100">
+							<select id="cars" name="cars" className="border-2 border-blue-500 border-opacity-100 h-8">
 								<option value="volvo">Progress</option>
 								<option value="saab">Saab</option>
 								<option value="fiat">Fiat</option>
 								<option value="audi">Audi</option>
 							</select>
 						</div>
-						<p>Tulisan gatau apaan ga kebaca</p>
+						<p className="text-sm">Diperbaharui beberapa menit lalu</p>
 					</div>
 				</div>
 				<MyBarChart />
@@ -50,7 +50,7 @@ export default function ContainerChart() {
 								<option value="audi">Audi</option>
 							</select>
 						</div>
-						<p>Tulisan gatau apaan ga kebaca</p>
+						<p className="text-sm">Diperbaharui beberapa menit lalu</p>
 					</div>
 				</div>
 				<PieChart />
