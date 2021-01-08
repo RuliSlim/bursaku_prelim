@@ -15,7 +15,7 @@ function CreateTitle({data}) {
 	const key = Object.keys(data);
 	return (
 		<thead className="w-full text-center">
-			<tr className={`lg:grid lg:grid-cols-8 w-full`}>
+			<tr className={`lg:grid lg:grid-cols-7 w-full`}>
 				{key.map((el, i) => <th className={`${i === 0 ? "border-l-2" : ""} ${i === key.length - 1 ? "col-span-2" : ""} border-b-2 py-4 border-t-2 border-r-2 border-black border-opacity-10`} key={el}>{el}</th>)}
 			</tr>
 		</thead>
@@ -28,7 +28,7 @@ function CreateBody({data}) {
 	return (
 		<tbody className="w-full text-center">
 			{data.map((el, i) => (
-				<tr key={i} className={`lg:grid lg:grid-cols-8 w-full`}>
+				<tr key={i} className={`lg:grid lg:grid-cols-7 w-full`}>
 					{Object.values(el).map((val, i) => (
 						(i === key.length - 1)
 						? <td td key={val} className={`${i === 0 ? "border-l-2" : ""} col-span-2 border-b-2 border-r-2 border-black border-opacity-10 px-4 py-2`}>
