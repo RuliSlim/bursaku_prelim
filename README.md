@@ -1,3 +1,3 @@
 # Bursaku Preliminary
-### hosted in 
-frontend using ReactJS and tailwindcss.
+### hosted in [Vercel](https://bursaku-prelim.vercel.app)
+frontend using ReactJS and tailwindcss and using dummy data.
